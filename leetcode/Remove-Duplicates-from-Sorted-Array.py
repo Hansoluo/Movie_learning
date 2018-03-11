@@ -13,18 +13,17 @@ class Solution:
         a = len(nums)
         i = 0
         while i < a:
-            b = nums[i]
-            nums.pop(i)
+            b = nums[0]
+            nums.pop(0)
             if b not in nums:
             	nums.append(b)
             	i = i + 1
             else:
             	a = len(nums)
-        return len(nums)
+        return len(nums),nums
 
-nums = [0,4,4,0,4,4,4,0,2]
+nums = [1,2]
 s = Solution()
 print(s.removeDuplicates(nums))
-
 
 
