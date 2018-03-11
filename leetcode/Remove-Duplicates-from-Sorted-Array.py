@@ -16,7 +16,7 @@ class Solution:
             b = nums[i]
             nums.pop(i)
             if b not in nums:
-            	nums.insert(i,b)
+            	nums.append(b)
             	i = i + 1
             else:
             	a = len(nums)
