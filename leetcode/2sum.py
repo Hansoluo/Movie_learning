@@ -5,7 +5,7 @@
 # You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
 # error TLE O(n*n)
-
+# 转换思路，遍历加和转化成查找字典
 
 class Solution:
     def twoSum(self, nums, target):
