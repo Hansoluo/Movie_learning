@@ -14,14 +14,10 @@ class Solution:
         :type target: int
         :rtype: List[int]
         """
-        i = 0
-        while i<len(nums)-1:
-        	j = i+1
-        	while j< len(nums):
-        		if nums[i] + nums[j] == target:
-        			return i,j
-        		j = j+1
-        	i = i+1
+        d ={nums[i]:i for i in range(len(nums))}
+        for i in range(len(nums)):
+        	if d.get(target-nums[i]):
+        		return i,d.get(target-nums[i])
 
 s = Solution()
 print(s.twoSum([3,2,4,3],6))
