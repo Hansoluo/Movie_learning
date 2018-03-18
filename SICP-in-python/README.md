@@ -9,4 +9,6 @@
 
 [S.I.C.P in python](http://composingprograms.com/)
 
+[CS61a](http://inst.eecs.berkeley.edu/~cs61a/sp12/index.html)
+
 这里为我记录每章的学习笔记，使用jupyter notebook。
