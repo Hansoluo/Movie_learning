@@ -3,12 +3,13 @@
 - 20180320：之前一直在docker上面使用tensorflow，因为要在本地处理大量图片，因此在本地配置深度学习环境，没想到遇坑连连，记录之。
 - 20180321：本地python完成深度环境安装，anaconda未能成功
 - 20180322：使用docker成功安装keras和OpenCV，仍然使用docker进行深度学习
+- 20180326: 完成基于jypyter notebook 本地Windows 7的深度环境配置
 
 ## 环境
 - Windows 7.1 旗舰版 64位
 - CPU：i3 M370@2.4GHz
 
-## 使用pip安装TensorFlow CPU版本
+## 本地使用pip安装TensorFlow CPU版本
 
 - 必读[官方文档](https://www.tensorflow.org/install/install_windows#CommonInstallationProblems)
 
@@ -32,8 +33,19 @@
     + 命令：pip install tensorflow==1.5 -i http://pypi.mirrors.ustc.edu.cn/simple --trusted-host pypi.mirrors.ustc.edu.cn
     + 参考：[win10上安装tensorflow注意事项](http://blog.csdn.net/bianjun1075/article/details/60478487)
 
-## 使用Anaconda安装TensorFlow CPU版本
-
+## 本地使用Anaconda安装TensorFlow CPU版本
+- 启动栏内的Anaconda Navigation 点击后闪退
+- 通过在cmd中输入命令进入Anaconda Navigation界面
+- Home界面中选择tensorflow环境，发现没有按照jupyter notebook
+- 更新Anaconda Navigation版本
+- 进入tensorflow环境内，完成jupyter notebook的安装
+- 安裝好之後再點擊tensorflow的三角箭頭，就會看到open with spyder 和open with jupyter notebook，直接點擊就能進入了
+- 安装好之后，启动栏出现jupyter notebook(tensorflow)快捷方式
+- 右击属性可以对其启动路径进行配置
+- 该环境内缺少的安装包可以通过Anaconda Navigation界面安装
+- 参考资料
+    + [通过 Anaconda 在 Jupyter 里运行 Tensorflow 及可视化](https://hacpai.com/article/1496391186149)
+    + [win7 使用anaconda安裝tensorflow並且在jupyter notebook上啟動](https://hk.saowen.com/a/5acf1b92e41cb57e4a297dee186b44d4edefd2209649e521afddcebe950810a9)
 
 
 ## 安装Keras
