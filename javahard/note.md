@@ -9,11 +9,14 @@
 ## ex1-ex4 print and comment
 
 - compile use `javac`, and will generate filename.class, then run program use `java`, use the class name, not filename. so if you modify the program, must recompile the program
-- like C++, use `;` as a end
 - `println()` print string on screen, and add a "\n", go to another line, but `print` will not
 - sublime print `main`, and will automatic completion the fuction statement
 - file name must same as the public class name, and one file must have only one public class name
-- comment use // and  /* just like c++
+- same as c++, use `;` as a end,comment use // and  /*
 
 
+## ex5
 
+- string can plus with int and double 
+- define variables must declare their type else thrown error can't find the symbol
+- 
